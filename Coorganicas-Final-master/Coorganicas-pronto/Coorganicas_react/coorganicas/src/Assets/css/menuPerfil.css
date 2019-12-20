@@ -1,0 +1,143 @@
+.container_perfil{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin:auto;
+}
+.bm-overlay{
+  width: 30%;
+background: none !important;
+  height: 30%;
+}
+.bm-burger-bars{
+width: 30%;
+}
+
+
+
+/* box-shadow: none !important;
+background: none !important; */
+/* position: none !important; */
+
+
+/* height: none !important; */
+
+/* .testando{
+position: fixed;
+
+
+} */
+.bm-burger-button button{
+  display: none;
+}
+
+.esquerdo{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  /* padding-top:20px !important; */
+  
+
+  background-color:#EFF3F6 !important;
+  /* height: 100%; */
+  /* position: absolute !important; */
+  /* left: 30vw; */
+  position: relative;
+  top:0;
+  
+
+}
+.menu_perfil{
+  color: var(--cinza-fonte) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  line-height: 4.0em; 
+  background-color:#EFF3F6 !important;
+  /* border-right: #BF0404 3px solid !important; */
+  border-right: #BF0404 3px solid !important;
+  /* position: relative; */
+  /* height: 754px; */
+  height: 100vh;
+ 
+ 
+}
+#icon_font{
+  color: #BF0404;
+  margin-left: 40px;
+  padding-top: 50px;
+  position: fixed;
+  width: 300px;
+  cursor: pointer;
+
+  
+}
+#icon_font_mobile{
+  display: none;
+}
+
+.ativo{
+    border-left: solid 2px var(--vermelho) ;
+    margin-left: 3px;
+}
+.menu_perfil li{
+  list-style: none;
+}
+.menu_perfil p{
+text-decoration: none;
+color: #707070 !important;
+font-size: 1.5em !important;
+list-style: none;
+padding-left: 10px !important;
+text-align: left !important;
+}
+.menu_perfil img {
+width: 200px !important;
+}
+@media(max-width:1169px){
+.menu_perfil, .esquerdo{
+  background-color:#EFF3F6;
+  
+  
+}
+
+.menu_perfil img {
+width: 150px !important;
+}
+
+
+
+
+
+}
+
+/* celular */
+@media(max-width:845px){
+.esquerdo{
+/* width: 80vw !important; */
+background-color:#EFF3F6 !important;
+/* width: 100% !important; */
+/* margin-top: -58px; */
+
+
+}
+.menu_perfil{
+background-color:#EFF3F6 !important;
+/* margin-top: 40px; */
+height: 100vh;
+
+
+}
+
+#icon_font{
+display: none;
+}
+#icon_font_mobile{
+display: block;
+color: #BF0404;
+  margin-left: 10px;
+  padding-top: 66px;
+  position: fixed;
+}
+}

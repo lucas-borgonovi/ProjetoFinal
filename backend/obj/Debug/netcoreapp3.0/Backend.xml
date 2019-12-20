@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Backend</name>
+    </assembly>
+    <members>
+        <member name="M:Backend.Controllers.BuscaController.Get(System.String)">
+            <summary>
+              Filtra o produto pelo nome.
+            </summary>
+            <param name="produto"></param>
+            <returns>Retorna lista de ofertas filtradas pelo nome do produto</returns>  
+        </member>
+        <member name="M:Backend.Controllers.EnderecoController.Get">
+            <summary>
+              Lista todos os endereços
+            </summary>
+            <returns>Todos os endereços cadastrados</returns>
+        </member>
+        <member name="M:Backend.Controllers.EnderecoController.Get(System.Int32)">
+            <summary>
+              Lista o endereço pelo Id
+            </summary>
+            <param name="id">Id do endereço</param>
+            <returns>Retorna o endereço referente ao Id passado </returns>
+        </member>
+        <member name="M:Backend.Controllers.EnderecoController.Post(Backend.Domains.Endereco)">
+            <summary>
+              Cadastra o endereço
+            </summary>
+            <param name="Endereco">Dados do endereço</param>
+            <returns>Retorna o endereço cadastrado</returns>
+        </member>
+        <member name="M:Backend.Controllers.EnderecoController.Put(System.Int32,Backend.Domains.Endereco)">
+            <summary>
+              Altera o endereço pelo Id passado
+            </summary>
+            <param name="id">Id do Endereço</param>
+            <param name="endereco">Dado do endereço a ser alterado</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Controllers.EnderecoController.Delete(System.Int32)">
+            <summary>
+              Deleta endereço cadastrado
+            </summary>
+            <param name="id">Id do endereço</param>
+            <returns>Retorna o endereço deletado</returns>
+        </member>
+        <member name="M:Backend.Controllers.FiltroController.Post(Backend.ViewModels.FiltroViewModel)">
+            <summary>
+             Lista todas as ofertas existentes
+            </summary>
+            <param name="oferta">Dados da oferta a ser filtrada</param>
+            <returns>Retorna as ofertaa filtradas</returns>    
+        </member>
+        <member name="M:Backend.Controllers.OfertaController.Get">
+            <summary>
+             Lista as ofertas cadastradas   
+            </summary>
+            <returns>Retorna as ofertas cadastradas pelos agricultores</returns>
+        </member>
+        <member name="M:Backend.Controllers.OfertaController.Get(System.Int32)">
+            <summary>
+              Procura Ofertas referente ao Id
+            </summary>
+            <param name="id">Id da Oferta</param>
+            <returns>Retorna a Oferta referente ao Id passado</returns>
+        </member>
+        <member name="M:Backend.Controllers.OfertaController.GetOfertasUsuario">
+            <summary>
+              Lista as ofertas cadastradas ao usuário logado
+            </summary>
+            <returns>Retorna as ofertas do usúario logado</returns>
+        </member>
+        <member name="M:Backend.Controllers.OfertaController.Post(Backend.ViewModels.CadastrarOfertaViewModel)">
+            <summary>
+              Cadastra uma oferta
+            </summary>
+            <param name="oferta">Dados da oferta</param>
+            <returns>Retorna Oferta cadastrada</returns>
+        </member>
+        <member name="M:Backend.Controllers.OfertaController.Put(System.Int32,Backend.ViewModels.AlterarOfertaViewModel)">
+            <summary>
+             Altera alguma Oferta cadastrada
+            </summary>
+            <param name="id">Id da oferta</param>
+            <param name="oferta">Dados a serem alterados</param>
+            <returns>Retorna a oferta alterada</returns>
+        </member>
+        <member name="M:Backend.Controllers.OfertaController.Delete(System.Int32)">
+            <summary>
+              Deleta Oferta Cadastrada
+            </summary>
+            <param name="id">Id da oferta</param>
+            <returns>Retorna a Oferta Deletada</returns>
+        </member>
+        <member name="M:Backend.Controllers.ProdutoController.Get">
+            <summary>
+              Lista todos os produtos cadastrados
+            </summary>
+            <returns>Retorna todos os produtos</returns>
+        </member>
+        <member name="M:Backend.Controllers.ProdutoController.Get(System.Int32)">
+            <summary>
+              Procura produtos referente ao Id
+            </summary>
+            <param name="id">Id do Produto</param>
+            <returns>Retorna a oferta referente ao Id passado</returns>
+        </member>
+        <member name="M:Backend.Controllers.ProdutoController.Post(Backend.Domains.Produto)">
+            <summary>
+               Cadastra um novo produto
+            </summary>
+            <param name="produto">Dados do produto</param>
+            <returns>Retorna o produto cadastrado</returns>
+        </member>
+        <member name="M:Backend.Controllers.ProdutoController.Put(System.Int32,Backend.ViewModels.AlteraProdutoViewModel)">
+            <summary>
+              Altera algum produto cadastrado
+            </summary>
+            <param name="id">Id do produto</param>
+            <param name="produto">Dados do produto a ser alterado</param>
+            <returns>Retorna o Produto alterado</returns>
+        </member>
+        <member name="M:Backend.Controllers.ProdutoController.Delete(System.Int32)">
+            <summary>
+              Deleta um produto cadastrado
+            </summary>
+            <param name="id">Id do produto</param>
+            <returns>retorna o produto cadastrado</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReceitaController.Get">
+            <summary>
+              Lista todas as receitas cadastradas
+            </summary>
+            <returns>Retorna as receitas cadastradas</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReceitaController.Get(System.Int32)">
+            <summary>
+              Procura Receitas referente ao Id
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna a receita referente ao Id passado</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReceitaController.GetReceitasUsuario">
+            <summary>
+              Lista as receitas cadastradas pelo usuário logado
+            </summary>
+            <returns>Receita cadastrada</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReceitaController.Post(Backend.ViewModels.CadastrarReceitaViewModel)">
+            <summary>
+              Cadastra uma receita
+            </summary>
+            <param name="receita">Dados da receita a ser cadastrada</param>
+            <returns>Retorna Receita cadastrada</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReceitaController.Put(System.Int32,Backend.ViewModels.AlterarReceitaViewModel)">
+            <summary>
+              Altera uma receita cadastrada
+            </summary>
+            <param name="id">Id da receita</param>
+            <param name="receita">Dados da receita a ser alterada</param>
+            <returns>Retorna a receita alterada</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReceitaController.Delete(System.Int32)">
+            <summary>
+              Deleta receita cadastrada
+            </summary>
+            <param name="id">Id da receita</param>
+            <returns>Rertorna Receita deletada</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReservaController.Get">
+            <summary>
+              Lista todas as reservas
+            </summary>
+            <returns>Retorna as reservas cadastradas</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReservaController.Get(System.Int32)">
+            <summary>
+                Procura Reserva referente ao Id
+            </summary>
+            <param name="id">Id da receita</param>
+            <returns>Retorna a reserva referente ao Id passado</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReservaController.GetOfertasUsuario">
+            <summary>
+              Lista as ofertas cadastradas ao usuário logado
+            </summary>
+            <returns>Retorna as ofertas do usúario logado</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReservaController.Post(Backend.ViewModels.CadastrarReservaViewModel)">
+            <summary>
+              Cadastra uma reserva
+            </summary>
+            <param name="reserva">Dados da reserva a ser cadastrada</param>
+            <returns>Retorna reserva cadastrada</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReservaController.Put(System.Int32,Backend.ViewModels.AlterarReservaViewModel)">
+            <summary>
+                Altera reserva cadastrada
+            </summary>
+            <param name="id">Id da reserva</param>
+            <param name="reserva">Dados da reserva a ser alterada</param>
+            <returns>Retorna reserva alterada</returns>
+        </member>
+        <member name="M:Backend.Controllers.ReservaController.Delete(System.Int32)">
+            <summary>
+                Deleta reserva cadastrada
+            </summary>
+            <param name="id">Id da reserva</param>
+            <returns>Retorna reserva deletada</returns>
+        </member>
+        <member name="M:Backend.Controllers.TelefoneController.Get">
+            <summary>
+              Lista todos os telefones
+            </summary>
+            <returns>Retorna todos os usuários cadastrados</returns>
+        </member>
+        <member name="M:Backend.Controllers.TelefoneController.Get(System.Int32)">
+            <summary>
+                Lista o telefone pelo Id
+            </summary>
+            <param name="id">Id do telefone</param>
+            <returns>Retorna o usuário referente ao Id passado</returns>
+        </member>
+        <member name="M:Backend.Controllers.TelefoneController.Post(Backend.Domains.Telefone)">
+            <summary>
+              Cadastra o telefone
+            </summary>
+            <param name="telefone">Dados do telefone</param>
+            <returns>Retorna o telefone que foi cadastrado</returns>
+        </member>
+        <member name="M:Backend.Controllers.TelefoneController.Put(System.Int32,Backend.Domains.Telefone)">
+            <summary>
+              Altera os dados do telefone pelo Id e o que foi passado.
+            </summary>
+            <param name="id">Id do telefone</param>
+            <param name="telefone">Dados do telefone para alteração</param>
+            <returns>Retorna telefone alterado</returns>
+        </member>
+        <member name="M:Backend.Controllers.TelefoneController.Delete(System.Int32)">
+            <summary>
+             Deleta o telefone pelo Id
+            </summary>
+            <param name="id">Id do telefone</param>
+            <returns>Retorna o telefone que foi deletado</returns>
+        </member>
+        <member name="M:Backend.Controllers.TipoUsuarioController.Get">
+            <summary>
+              Lista os tipos de usuários
+            </summary>
+            <returns>Retorna os tipos de usuários</returns>
+        </member>
+        <member name="M:Backend.Controllers.TipoUsuarioController.Get(System.Int32)">
+            <summary>
+              Lista o tipo de usuário pelo Id
+            </summary>
+            <param name="id">Id do tipo usuário</param>
+            <returns>Retorna o tipo de usuário referente ao Id passado</returns>
+        </member>
+        <member name="M:Backend.Controllers.TipoUsuarioController.Post(Backend.Domains.TipoUsuario)">
+            <summary>
+              Cadastra o Tipo de usuário
+            </summary>
+            <param name="tipoUsuario">Dados do tipo de usuário</param>
+            <returns>Retorna o tipo de usuário que foi cadastrado</returns>
+        </member>
+        <member name="M:Backend.Controllers.TipoUsuarioController.Put(System.Int32,Backend.Domains.TipoUsuario)">
+            <summary>
+              Altera os dados do tipo de usuário pelo Id e o que foi passado.
+            </summary>
+            <param name="id">Id do tipo usuário</param>
+            <param name="tipoUsuario">Dados do tipo usuario</param>
+            <returns>Retorna O tipo de usuario alterado</returns>
+        </member>
+        <member name="M:Backend.Controllers.TipoUsuarioController.Delete(System.Int32)">
+            <summary>
+              Deleta o tipo de usuário
+            </summary>
+            <param name="id">id do tipo de usuário</param>
+            <returns>Retorna tipo de usuário deletado</returns>
+        </member>
+        <member name="M:Backend.Controllers.UploadController.Upload">
+            
+        </member>
+        <member name="M:Backend.Controllers.UsuarioController.Get">
+            <summary>
+                Lista todos os usuários
+            </summary>
+            <returns>Retorna todos os usuários cadastrados</returns>
+        </member>
+        <member name="M:Backend.Controllers.UsuarioController.Get(System.Int32)">
+            <summary>
+                Lista o usuário pelo Id
+            </summary>
+            <param name="id">Id do usuário</param>
+            <returns>Retorna o usuário referente ao Id passado</returns>
+        </member>
+        <member name="M:Backend.Controllers.UsuarioController.Post(Backend.ViewModels.CadastrarUsuarioViewModel)">
+            <summary>
+              Cadastra o usuário
+            </summary>
+            <param name="usuario">Dados do usuário</param>
+            <returns>Retorna o usuario que foi cadastrado</returns>
+        </member>
+        <member name="M:Backend.Controllers.UsuarioController.Put(System.Int32,Backend.ViewModels.AlterarUsuarioViewModel)">
+            <summary>
+             Altera os dados do usuário pelo Id e o que foi passado.  
+            </summary>
+            <param name="id">Id do usuário</param>
+            <param name="usuario">Dados do usuário para alteração</param>
+            <returns>Retorna status Ok com a mensagem de usuário cadastrado com sucesso</returns>
+        </member>
+        <member name="M:Backend.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+                Deleta o usuário pelo Id
+            </summary>
+            <param name="id">Id do usuário</param>
+            <returns>Retorna o usuário que foi deletado</returns>
+        </member>
+        <member name="M:Backend.Utils.VerificaReservasExistentes.RotinaReservaExistente">
+            <summary>
+                Rotina para excluir reservas expiradas e ofertas vencidas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend_Cooganicas.Controllers.LoginController.Login(Backend.ViewModels.LoginViewModel)">
+            <summary>
+              Loga o usuario e gera token de acesso  
+            </summary>
+            <param name="login">Email e senha de login do usuario</param>
+            <returns>Retorna O token de acesso</returns>
+        </member>
+    </members>
+</doc>

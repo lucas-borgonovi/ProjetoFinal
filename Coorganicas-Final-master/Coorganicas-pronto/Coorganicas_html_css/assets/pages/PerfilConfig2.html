@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/menuPerfil.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Perfil agricutor  - Coorgânicas</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container_perfil">
+            <div class="esquerdo">
+                <nav class="menu_perfil">
+                    <ul>
+                        <li><a title= "Imagem do site Coorgânicas" href=""><img src="../images/celeiro (1).svg"></a></li>
+                        <li><a title= "Perfil de configuraçao do site Coorgânicas" href="PerfilConfig2.html">Nome</a></li>
+                        <li><a title= "Meus produtos do site Coorgânicas" href="perfil2.html">Meus Produtos</a></li>
+                        <li><a title= "Cadastrar produto do site Coorgânicas" href="perfil.html">Cadastrar Produto</a></li>
+                        <li class="ativo"><a  title= "Perfil de configuraçao do site Coorgânicas" href="PerfilConfig2.html">Minhas Informações</a></li>
+                        <li><a title= "Sair do site Coorgânicas" href="login.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <form method="POST" id="form_cadastro_conf">
+                    <h1 class="t_perfil">Editar minhas informações</h1>
+                    <label> <span>Nome:</span>
+                        <input type="text" placeholder="Digite o seu nome..." aria-label="Digite o seu nome" name="nome" required></input>
+                    </label> <br><br>
+                    <label> <span>E-mail:</span>
+                        <input type="e-mail" placeholder="Digite o seu e-mail..." aria-label="Digite o seu e-mail" name="e-mail" required></input>
+                    </label> <br><br>
+                    <label> <span>Senha:</span>
+                        <input type="password" placeholder="Digite a sua senha..." aria-label="Digite a sua senha" name="senha" required></input>
+                    </label> <br><br>
+                    <label> <span>Confirmar senha:</span>
+                        <input type="password" placeholder="Confirme a sua senha..." aria-label="Confirmae a sua senha"name="confirmar_senha" required></input>
+                    </label> <br><br>
+                    <div class="btns">
+                        <button type="submit" class="btn"><a href="">Salvar</a></button>
+                        <button type="reset" class="btn"><a href="">Cancelar</a></button>
+                    </div>
+                </form>
+        </div>
+    </main>
+    <!-- <script src="../js/MenuMobile.js"></script> -->
+</body>
+
+</html>

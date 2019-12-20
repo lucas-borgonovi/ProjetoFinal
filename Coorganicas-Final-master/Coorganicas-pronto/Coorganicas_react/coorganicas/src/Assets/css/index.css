@@ -1,0 +1,502 @@
+
+.nao_encontrada{
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 189px;
+    padding: 100px 0px;
+}
+.nao_encontrada h1{
+    text-align: center;
+    padding: 30px 0px;
+    font-weight: bold;
+    
+}
+.nao_encontrada p{
+    text-align: center;
+    padding: 10px 0px;
+    
+    
+}
+.nao_encontrada img{
+    width: 200px;
+    
+    
+}
+.Container_not{
+    width: 1000px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.0em;
+    margin: auto;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/fotobaaner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 620px;
+    border-bottom: 2px solid #cccccc;
+    border-top: 2px solid #cccccc;
+}
+
+#banner .container_column {
+    width: 700px;
+}
+
+.column {
+    flex-direction: column;
+}
+.sumir_aparecer{
+    display: none;
+}
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1 {
+    color: var(--vermelho);
+    font-size: 80px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+
+.banner_headline h2 {
+    color: white;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner_options {
+    height: 260px;
+    display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+.banner1 {
+    background-color: var(--laranja);
+    position: relative;
+    bottom: -316px;
+}
+
+
+/* 
+.banner2 {
+    background-color: var(--verde);    
+}
+
+.banner3 {
+    background-color: var(--vermelho);    
+} */
+
+.banner_title {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.banner_desc {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.banner_options a {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner_options a:hover {
+    background-color: white;
+    color: var(--laranja);
+}
+
+.saiba_mais {
+    text-align: center;
+}
+
+.procedencias {
+    display: flex;
+    justify-content: center;
+}
+
+.procedenciasInt {
+    flex: 1;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 30px 20px;
+    -webkit-box-shadow: 4px 4px 10px 6px rgba(163, 158, 163, 1);
+    -moz-box-shadow: 4px 4px 10px 6px rgba(163, 158, 163, 1);
+    box-shadow: 4px 4px 10px 6px rgba(163, 158, 163, 1);
+    border-radius: 4px;
+}
+
+.title_procedencia {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--laranja);
+    font-weight: 900;
+}
+
+.icone {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.procedenciasInt img {
+    height: 100px;
+    text-align: center;
+}
+
+.procedenciasInt p {
+    line-height: 1.6em;
+    font-size: 18px;
+
+}
+
+.conteudo_principal {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widget {
+    padding: 20px;
+}
+
+.widget_title {
+    margin: 20px;
+}
+
+.widget_title_text {
+    color: var(--laranja);
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 0 35px;
+}
+
+.widget_title_bar {
+    width: 130px;
+    margin-left: 35px;
+    height: 2px;
+    background-color: var(--cinza-fonte);
+    margin-top: 5px;
+}
+
+article {
+    flex: 1;
+    min-width: 250px;
+  
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news_data {
+    display: flex;
+    padding: 5px;
+}
+
+article .news_posted_at {
+    background-color: var(--verde);
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 3px;
+    font-weight: 600;
+}
+
+article .news_comments {
+    background-color: var(--verde);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+    height: 400px;
+}
+
+article .news_thumbnail img {
+    width: 250px;
+    height: 330px;
+}
+
+.um {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.widget_bodyflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+article .news_title {
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--laranja);
+    font-weight: bold;
+    font-size: 2.0em;
+    text-align: center;
+}
+
+article .news_resume {
+    padding: 0 80px;
+    font-size: 1.3em;
+    color: #5c5c5c;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+   
+}
+
+
+/*CARROSEL */
+
+
+.w-100 {
+    width: 300px;
+    height: 300px;
+}
+
+.view img,
+view video {
+    position: inherit;
+}
+
+.Carrousel {
+    display: flex;
+    width: 460px;
+    height: 400px;
+    vertical-align: middle;
+    border-style: none;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.CarrouselGeral {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 280px;
+    align-items: center;
+}
+
+.btnmercado {
+    padding-bottom: 37px;
+}
+
+
+/*celularrrr*/
+
+@media(max-width:845px) {
+
+    .banner_desc {
+        font-size: 18px;
+        margin-top: 6px;
+        margin-bottom: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    .menu nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+   
+    .container_rodape h3 {
+        text-align: center;
+    }
+    .projeto,
+    .contatos,
+    .redes_sociais {
+        padding-top: 30px;
+    }
+    .redes_sociais {
+        padding-left: 25px;
+    }
+   
+    
+   .Carrousel{
+       display: block;
+   }
+    .btnmercado {
+        padding-bottom: 37px;
+    }
+    /****** Rodapé  */
+    /* Footer */
+    footer {
+        padding-top: 0px;
+    }
+
+    .conteudo_principal{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    .container_{
+        width: 100%;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+   
+      
+       
+    }
+    .BannerEcard{
+        width: 100%;
+    }
+    .news_thumbnail{
+        display: block;
+    }
+ 
+
+ .procedencias{
+     width: 100%;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+.procedenciasInt{
+    height: 68x;
+    width: 300px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+    .procedenciasInt p {
+        line-height: 1.6em;
+        font-size: 20px;
+        text-align: justify; 
+        
+    }
+    
+    .banner1{
+        width: 100%;
+        
+    }
+
+    .banner_desc{
+     
+       align-items: center;
+       justify-content: center;
+       font-size: 18px;
+       width: 100%;
+    }
+    .saiba_mais{
+        align-items: center;
+        justify-content: center;
+    }
+   .widget{
+       padding: 0;
+   }
+
+ 
+.receita_home{
+    margin-bottom: 10px;
+}
+
+
+.banner_options {
+    height: 300px;
+    display: flex;
+    width: 100%;
+}
+.container_column{
+    width: 100%;
+}
+#banner{
+    width: 100%;
+}
+.sumir_aparecer{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.news_img img{
+    width: 300px;
+}
+.news_img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding:10px 0px;
+}
+.App{
+    width: 100%;
+    margin: auto;
+}
+ .news_t{
+    padding: 0;
+    width: 90vw;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+/*não vai aparecer*/
+.widget_bodyflex{
+    display: none;
+}
+ 
+}
